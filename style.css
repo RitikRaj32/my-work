@@ -5,8 +5,9 @@
 
 main {
   display: flex;
-  background-color:#f0f4ff;
+  background-color: #f0f4ff;
 }
+
 /* style the side black nav-bar */
 
 .navbar {
@@ -35,6 +36,7 @@ main {
   color: white;
 
 }
+
 /* adjust menu option */
 #nav-option {
   display: flex;
@@ -46,6 +48,7 @@ main {
   height: 350px;
 
 }
+
 /* styling nemu option  */
 
 .option {
@@ -68,6 +71,7 @@ main {
   border-radius: 9px;
 
 }
+
 /* transiton for nemu option  */
 
 .option:hover {
@@ -174,7 +178,7 @@ input:focus+.slider {
 
 #homepage {
   margin-left: 260px;
-  
+
 
 }
 
@@ -207,7 +211,7 @@ input:focus+.slider {
 }
 
 #smg2 {
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px 30px 0px;
   color: white;
   font-family: "Albert Sans", sans-serif;
   font-weight: 500;
@@ -261,24 +265,26 @@ input:focus+.slider {
 
 
 
-.subhead{
+.subhead {
   margin: 50px 0px 0px 60px;
   font-size: 25px;
-  font-family:"Albert Sans", sans-serif ;
-  
+  font-family: "Albert Sans", sans-serif;
+
 
 }
-.subhead-icon{
+
+.subhead-icon {
   height: 35px;
   width: 32px;
   position: relative;
   top: 10px;
 }
-#subject{
+
+#subject {
   height: 400px;
   width: 1150px;
   margin: 20px 0px 0px 60px;
-  
+
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
@@ -286,8 +292,9 @@ input:focus+.slider {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 /* style the subjects box */
-.subject-card{
+.subject-card {
   width: 204px;
   height: 184px;
   border: 0.2px solid rgb(208, 204, 204);
@@ -299,36 +306,41 @@ input:focus+.slider {
   border-radius: 15px;
   gap: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  
+
 }
-.subject-name{
-  font-family:"Albert Sans", sans-serif ;
+
+.subject-name {
+  font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 700;
 
 }
-.num-chapter{
-  font-family:"Albert Sans", sans-serif ;
+
+.num-chapter {
+  font-family: "Albert Sans", sans-serif;
   font-size: 12px;
   color: #838389;
 
 }
+
 /* hide unnessary box */
-#hide{
+#hide {
   display: none;
 }
-#hi-de{
+
+#hi-de {
   display: none;
 }
-  
-#pyq-message{
-  margin:3px 0px 0px 60px ;
+
+#pyq-message {
+  margin: 3px 0px 0px 60px;
   font-family: "Albert Sans", sans-serif;
   color: #838389;
 }
-#pyq{
-  margin: 20px 0px 150px 60px ;
+
+#pyq {
+  margin: 20px 0px 150px 60px;
   height: 210px;
   width: 1150px;
   display: flex;
@@ -336,8 +348,9 @@ input:focus+.slider {
   flex-wrap: wrap;
 
 }
+
 /*styling pyq section */
-.pyq-card{
+.pyq-card {
   width: 142px;
   height: 90px;
   border: 0.2px solid rgb(208, 204, 204);
@@ -348,65 +361,287 @@ input:focus+.slider {
   align-items: center;
   justify-content: center;
 }
-.year{
-  font-family:"Albert Sans", sans-serif ;
+
+.year {
+  font-family: "Albert Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #6f7af1;
 }
+
 /*adjust the size of font for geography */
-#geography{
+#geography {
   font-size: 15px;
   font-weight: 600;
-   font-family:"Albert Sans", sans-serif ;
-   text-transform: capitalize;
+  font-family: "Albert Sans", sans-serif;
+  text-transform: capitalize;
 }
+
 /*adjust the size of font for history */
-#history{
+#history {
   font-size: 14px;
   font-weight: 600;
-   font-family:"Albert Sans", sans-serif ;
-   text-transform: capitalize;
+  font-family: "Albert Sans", sans-serif;
+  text-transform: capitalize;
 }
 
-#scene{
-  position:fixed;
+#scene {
+  position: fixed;
   left: 1250px;
   bottom: 30px;
-  height: 170px; 
+  height: 170px;
   z-index: 1;
-  
+
 
 }
-.scene-wrap{background:transparent}
-#scene{display:block}
-#lampGlow{animation:glowPulse 3.4s ease-in-out infinite}
-#bulb{animation:bulbPulse 3.4s ease-in-out infinite}
-@keyframes glowPulse{0%,100%{opacity:0.7;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
-@keyframes bulbPulse{0%,100%{opacity:0.85}50%{opacity:1}}
-#torso{animation:breathe 3.2s ease-in-out infinite}
-@keyframes breathe{0%,100%{transform:translate(265px,225px) scale(1)}50%{transform:translate(265px,224px) scale(1.012)}}
-.eye{animation:blink 4.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-@keyframes blink{0%,91%,100%{transform:scaleY(1)}94%{transform:scaleY(0.12)}}
-.steam-a{animation:riseA 2.6s ease-out infinite}
-.steam-b{animation:riseB 2.6s ease-out infinite 1.1s}
-@keyframes riseA{0%{opacity:0;transform:translateY(6px)}25%{opacity:0.7}80%{opacity:0}100%{opacity:0;transform:translateY(-26px)}}
-@keyframes riseB{0%{opacity:0;transform:translateY(6px)}25%{opacity:0.6}80%{opacity:0}100%{opacity:0;transform:translateY(-26px)}}
-#phoneScreen{animation:phoneGlow 5s ease-in-out infinite}
-@keyframes phoneGlow{0%,85%,100%{opacity:1}90%{opacity:0.4}}
-.ink{stroke-dasharray:1;stroke-dashoffset:1}
-#student.writing #line1{animation:draw 0.8s ease forwards 0s}
-#student.writing #line2{animation:draw 0.8s ease forwards 0.9s}
-#student.writing #line3{animation:draw 0.8s ease forwards 1.8s}
-#student.writing #line4{animation:draw 0.8s ease forwards 2.7s}
-@keyframes draw{to{stroke-dashoffset:0}}
-#student.writing .pen-wiggle{animation:wiggle 0.28s ease-in-out infinite}
-#student.writing .pen-wiggle-hand{animation:wiggleHand 0.28s ease-in-out infinite}
-@keyframes wiggle{0%,100%{transform:rotate(-32deg)}50%{transform:rotate(-22deg)}}
-@keyframes wiggleHand{0%,100%{transform:translate(340px,296px) rotate(-6deg)}50%{transform:translate(343px,293px) rotate(6deg)}}
-#student.pausing #head{animation:nod 0.9s ease-in-out 1}
-@keyframes nod{0%,100%{transform:translate(268px,150px) rotate(0deg)}50%{transform:translate(268px,153px) rotate(4deg)}}
-#flipPage{transform-origin:4px 27px;transform:rotateY(0deg);opacity:0}
-#student.flipping #flipPage{animation:flip 1s ease-in-out 1;opacity:1}
-@keyframes flip{0%{transform:rotateY(0deg)}50%{transform:rotateY(-170deg)}100%{transform:rotateY(0deg);opacity:0}}
 
+.scene-wrap {
+  background: transparent
+}
+
+#scene {
+  display: block
+}
+
+#lampGlow {
+  animation: glowPulse 3.4s ease-in-out infinite
+}
+
+#bulb {
+  animation: bulbPulse 3.4s ease-in-out infinite
+}
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1)
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08)
+  }
+}
+
+@keyframes bulbPulse {
+
+  0%,
+  100% {
+    opacity: 0.85
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+#torso {
+  animation: breathe 3.2s ease-in-out infinite
+}
+
+@keyframes breathe {
+
+  0%,
+  100% {
+    transform: translate(265px, 225px) scale(1)
+  }
+
+  50% {
+    transform: translate(265px, 224px) scale(1.012)
+  }
+}
+
+.eye {
+  animation: blink 4.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center
+}
+
+@keyframes blink {
+
+  0%,
+  91%,
+  100% {
+    transform: scaleY(1)
+  }
+
+  94% {
+    transform: scaleY(0.12)
+  }
+}
+
+.steam-a {
+  animation: riseA 2.6s ease-out infinite
+}
+
+.steam-b {
+  animation: riseB 2.6s ease-out infinite 1.1s
+}
+
+@keyframes riseA {
+  0% {
+    opacity: 0;
+    transform: translateY(6px)
+  }
+
+  25% {
+    opacity: 0.7
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-26px)
+  }
+}
+
+@keyframes riseB {
+  0% {
+    opacity: 0;
+    transform: translateY(6px)
+  }
+
+  25% {
+    opacity: 0.6
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-26px)
+  }
+}
+
+#phoneScreen {
+  animation: phoneGlow 5s ease-in-out infinite
+}
+
+@keyframes phoneGlow {
+
+  0%,
+  85%,
+  100% {
+    opacity: 1
+  }
+
+  90% {
+    opacity: 0.4
+  }
+}
+
+.ink {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1
+}
+
+#student.writing #line1 {
+  animation: draw 0.8s ease forwards 0s
+}
+
+#student.writing #line2 {
+  animation: draw 0.8s ease forwards 0.9s
+}
+
+#student.writing #line3 {
+  animation: draw 0.8s ease forwards 1.8s
+}
+
+#student.writing #line4 {
+  animation: draw 0.8s ease forwards 2.7s
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0
+  }
+}
+
+#student.writing .pen-wiggle {
+  animation: wiggle 0.28s ease-in-out infinite
+}
+
+#student.writing .pen-wiggle-hand {
+  animation: wiggleHand 0.28s ease-in-out infinite
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(-32deg)
+  }
+
+  50% {
+    transform: rotate(-22deg)
+  }
+}
+
+@keyframes wiggleHand {
+
+  0%,
+  100% {
+    transform: translate(340px, 296px) rotate(-6deg)
+  }
+
+  50% {
+    transform: translate(343px, 293px) rotate(6deg)
+  }
+}
+
+#student.pausing #head {
+  animation: nod 0.9s ease-in-out 1
+}
+
+@keyframes nod {
+
+  0%,
+  100% {
+    transform: translate(268px, 150px) rotate(0deg)
+  }
+
+  50% {
+    transform: translate(268px, 153px) rotate(4deg)
+  }
+}
+
+#flipPage {
+  transform-origin: 4px 27px;
+  transform: rotateY(0deg);
+  opacity: 0
+}
+
+#student.flipping #flipPage {
+  animation: flip 1s ease-in-out 1;
+  opacity: 1
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg)
+  }
+
+  50% {
+    transform: rotateY(-170deg)
+  }
+
+  100% {
+    transform: rotateY(0deg);
+    opacity: 0
+  }
+}
+
+/*style subject-icon */
+.subject-icon {
+  height: 60px;
+  width: 60px;
+  filter: drop-shadow(5px 4px 6px rgba(130, 173, 230, 0.981));
+
+}
