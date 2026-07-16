@@ -1,0 +1,363 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  background-color:#f0f4ff;
+}
+/* style the side black nav-bar */
+
+.navbar {
+
+  position: fixed;
+  height: 100vh;
+  width: 260px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Albert Sans", sans-serif;
+  background-color: #1a1a2e;
+
+
+}
+
+/*nav-bar header or name of website */
+
+#nav-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 24px 24px 24px;
+  font-size: 40px;
+  font-family: "Albert Sans", sans-serif;
+  color: white;
+
+}
+/* adjust menu option */
+#nav-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  width: 250px;
+  height: 350px;
+
+}
+/* styling nemu option  */
+
+.option {
+  margin-bottom: 10px;
+  padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: none;
+  background-color: #1a1a2e;
+  font-family: "Albert Sans", sans-serif;
+  width: 230px;
+  height: 60px;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-radius: 9px;
+
+}
+/* transiton for nemu option  */
+
+.option:hover {
+  background-color: #252542;
+}
+
+.option:active {
+  background: linear-gradient(to right, #818cf8, #a855f7);
+  box-shadow: 2px 2px 5px #6f7af1;
+
+}
+
+#nev-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 250px;
+  height: 190px;
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  gap: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 16px;
+
+}
+
+#theme {
+  align-self: flex-end;
+  font-family: "Albert Sans", sans-serif;
+  margin-bottom: 20px;
+
+}
+
+#message {
+  font-family: "Albert Sans", sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.icon {
+
+  width: 25px;
+  height: 25px;
+  display: inline;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The background track style */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* The moving sliding circle */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Track background changes when checked */
+input:checked+.slider {
+  background-color: #a855f7;
+}
+
+/* Slide the inner circle to the right when checked */
+input:checked+.slider::before {
+  transform: translateX(26px);
+}
+
+/* Add a focus ring for accessibility */
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+#homepage {
+  margin-left: 260px;
+  
+
+}
+
+/* style for wellcome message */
+
+#wellcome {
+
+  border-radius: 25px;
+  width: 1150px;
+  height: 200px;
+  margin: 35px 0px 0px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #818cf8, #7b3ab8);
+  box-shadow: 2px 2px 5px #6f7af1;
+
+}
+
+#smg1 {
+  margin: 40px 0px 0px 0px;
+  font-size: 35px;
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+
+
+}
+
+#smg2 {
+  margin: 5px 0px 0px 0px;
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: capitalize;
+
+}
+
+/* style the svg hello icon and animation */
+
+#helloicon {
+  position: relative;
+  top: 10px;
+  transform-origin: 70% 70%;
+  animation: wave 2.4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+.subhead{
+  margin: 50px 0px 0px 60px;
+  font-size: 25px;
+  font-family:"Albert Sans", sans-serif ;
+  
+
+}
+.subhead-icon{
+  height: 35px;
+  width: 32px;
+  position: relative;
+  top: 10px;
+}
+#subject{
+  height: 400px;
+  width: 1150px;
+  margin: 20px 0px 0px 60px;
+  
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* style the subjects box */
+.subject-card{
+  width: 204px;
+  height: 184px;
+  border: 0.2px solid rgb(208, 204, 204);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  gap: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  
+}
+.subject-name{
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+
+}
+.num-chapter{
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 12px;
+  color: #838389;
+
+}
+#pyq-message{
+  margin:3px 0px 0px 60px ;
+  font-family: "Albert Sans", sans-serif;
+  color: #838389;
+}
+#pyq{
+  margin: 20px 0px 50px 60px ;
+  height: 210px;
+  width: 1150px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+/*styling pyq section */
+.pyq-card{
+  width: 142px;
+  height: 90px;
+  border: 0.2px solid rgb(208, 204, 204);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.year{
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 30px;
+  font-weight: 700;
+  color: #6f7af1;
+}
+/*adjust the size of font for geography */
+#geography{
+  font-size: 15px;
+  font-weight: 600;
+   font-family:"Albert Sans", sans-serif ;
+   text-transform: capitalize;
+}
+/*adjust the size of font for history */
+#history{
+  font-size: 14px;
+  font-weight: 600;
+   font-family:"Albert Sans", sans-serif ;
+   text-transform: capitalize;
+}
+
