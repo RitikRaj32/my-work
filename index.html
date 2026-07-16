@@ -102,10 +102,10 @@
                     </svg></p>
                 <p id="smg2">Choose a subject below and start practicing questions for your BSE Odisha 10th board exam.
                 </p>
-                <svg></svg>
+                
             </div>
             <!-- making subject card-->
-            <h2 class="subhead"><img class="subhead-icon"src="subjects.png">subjects</h2>
+            <h2 class="subhead"><img class="subhead-icon" src="subjects.png">subjects</h2>
             <div id="subject">
                 <div class="subject-card">
                     <img src="">
@@ -144,7 +144,7 @@
 
                 <div class="subject-card">
                     <img src="">
-                    <p  id="geography" >geography and economics</p>
+                    <p id="geography">geography and economics</p>
                     <p class="num-chapter">5 chapters</p>
                     <p class="practice"></p>
                 </div>
@@ -162,19 +162,178 @@
                     <p class="practice"></p>
                 </div>
 
-                   <div class="subject-card">
+                <div class="subject-card" id="hide">
                     <img src="">
                     <p class="subject-name">sanskrit</p>
                     <p class="num-chapter">5 chapters</p>
                     <p class="practice"></p>
                 </div>
 
-                   <div class="subject-card">
+                <div class="subject-card" id="hi-de">
                     <img src="">
                     <p class="subject-name">sanskrit</p>
                     <p class="num-chapter">5 chapters</p>
                     <p class="practice"></p>
                 </div>
+                <!--add animated svg-->
+                <svg id="scene" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg" role="img">
+                    <title>Boy in orange hoodie writing notes at a cozy study desk</title>
+                    <desc>Animated illustration of a boy with messy black hair writing in a notebook at a wooden desk,
+                        with a lamp, steaming mug, phone and stacked books, transparent background</desc>
+                    <defs>
+                        <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#d99a5c" />
+                            <stop offset="100%" stop-color="#b97b3f" />
+                        </linearGradient>
+                        <linearGradient id="hoodie" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#ff9a52" />
+                            <stop offset="100%" stop-color="#e8712a" />
+                        </linearGradient>
+                        <radialGradient id="skin" cx="35%" cy="30%" r="75%">
+                            <stop offset="0%" stop-color="#ffd9b3" />
+                            <stop offset="100%" stop-color="#f0b183" />
+                        </radialGradient>
+                        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#fff2c2" stop-opacity="0.95" />
+                            <stop offset="100%" stop-color="#fff2c2" stop-opacity="0" />
+                        </radialGradient>
+                        <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+                            <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#5a3a1a" flood-opacity="0.25" />
+                        </filter>
+                    </defs>
+
+                    <circle id="lampGlow" cx="565" cy="150" r="90" fill="url(#glow)" />
+
+                    <g id="chairBack">
+                        <rect x="160" y="70" width="210" height="270" rx="45" fill="#c9ccd4" />
+                        <rect x="160" y="70" width="210" height="270" rx="45" fill="#aeb2bc" opacity="0.4" />
+                    </g>
+
+                    <g id="books">
+                        <rect x="20" y="300" width="95" height="18" rx="4" fill="#c1662f" stroke="#8f4a1e"
+                            stroke-width="2" />
+                        <rect x="26" y="284" width="88" height="18" rx="4" fill="#4a6fa5" stroke="#31507c"
+                            stroke-width="2" />
+                        <g transform="rotate(-6 150 300)">
+                            <path d="M55,300 L150,290 L150,332 L55,340 Z" fill="#3f7d52" stroke="#295634"
+                                stroke-width="2" />
+                            <path d="M150,290 L245,300 L245,340 L150,332 Z" fill="#f5f2e8" stroke="#c9c4b2"
+                                stroke-width="2" />
+                            <ellipse cx="190" cy="308" rx="14" ry="8" fill="#7bbf6a" />
+                        </g>
+                    </g>
+
+                    <rect x="0" y="340" width="680" height="18" fill="#e8b183" />
+                    <rect x="0" y="358" width="680" height="70" fill="url(#desk)" />
+                    <rect x="0" y="340" width="680" height="4" fill="#ffd9a8" opacity="0.6" />
+
+                    <g id="mug" transform="translate(555,300)">
+                        <g id="steam">
+                            <path class="steam-a" d="M-6,0 Q-14,-14 -4,-26 Q4,-38 -6,-50" fill="none" stroke="#b9c2cc"
+                                stroke-width="4" stroke-linecap="round" opacity="0" />
+                            <path class="steam-b" d="M8,0 Q0,-14 10,-26 Q18,-38 8,-50" fill="none" stroke="#b9c2cc"
+                                stroke-width="4" stroke-linecap="round" opacity="0" />
+                        </g>
+                        <rect x="-24" y="0" width="48" height="42" rx="8" fill="#f7f4ee" stroke="#c7c2b4"
+                            stroke-width="2" filter="url(#soft)" />
+                        <path d="M22,8 q20,2 20,16 q0,14 -20,14" fill="none" stroke="#f7f4ee" stroke-width="6" />
+                        <text x="0" y="25" text-anchor="middle" font-size="8" font-weight="500" fill="#8a5a30">STUDY
+                            MODE</text>
+                    </g>
+
+                    <g id="phone" transform="translate(470,300)">
+                        <rect x="-20" y="0" width="42" height="72" rx="9" fill="#2b2f38" stroke="#14161b"
+                            stroke-width="2" filter="url(#soft)" />
+                        <rect id="phoneScreen" x="-16" y="6" width="34" height="60" rx="5" fill="#3a4a63" />
+                        <text x="1" y="34" text-anchor="middle" font-size="8" fill="#cfe0ff">10:15</text>
+                    </g>
+
+                    <g id="lamp" transform="translate(600,60)">
+                        <ellipse cx="0" cy="290" rx="26" ry="8" fill="#c98a3e" />
+                        <rect x="-6" y="120" width="12" height="170" rx="6" fill="#d9a24d" />
+                        <path d="M-4,120 Q-70,110 -95,88" fill="none" stroke="#d9a24d" stroke-width="12"
+                            stroke-linecap="round" />
+                        <circle id="bulb" cx="-95" cy="88" r="10" fill="#fff2c2" />
+                        <path d="M-95,88 L-135,60 L-55,60 Z" fill="#d9a24d" stroke="#b97b2f" stroke-width="2" />
+                    </g>
+
+                    <g id="student">
+                        <g id="legLeft" transform="translate(238,300)">
+                            <rect x="-16" y="0" width="32" height="60" rx="14" fill="#3a4356" />
+                        </g>
+                        <g id="legRight" transform="translate(292,300)">
+                            <rect x="-16" y="0" width="32" height="60" rx="14" fill="#3a4356" />
+                        </g>
+
+                        <g id="armLeft" transform="translate(215,230) rotate(18)">
+                            <rect x="-13" y="0" width="26" height="80" rx="13" fill="url(#hoodie)" stroke="#c8551c"
+                                stroke-width="2" />
+                        </g>
+                        <g id="handLeft" transform="translate(228,300)">
+                            <circle r="12" fill="url(#skin)" stroke="#d69a68" stroke-width="2" />
+                        </g>
+
+                        <g id="torso" transform="translate(265,225)">
+                            <path d="M-58,10 Q-64,-30 0,-38 Q64,-30 58,10 L58,95 Q0,115 -58,95 Z" fill="url(#hoodie)"
+                                stroke="#c8551c" stroke-width="3" filter="url(#soft)" />
+                            <path d="M-18,-36 L-14,-4 M18,-36 L14,-4" stroke="#ffffff" stroke-width="4"
+                                stroke-linecap="round" opacity="0.8" />
+                        </g>
+
+                        <g id="armRight" transform="translate(305,232)">
+                            <g id="forearm" class="pen-wiggle" transform="rotate(-32)">
+                                <rect x="-13" y="0" width="26" height="78" rx="13" fill="url(#hoodie)" stroke="#c8551c"
+                                    stroke-width="2" />
+                            </g>
+                        </g>
+                        <g id="handRight" transform="translate(340,296)" class="pen-wiggle-hand">
+                            <circle r="13" fill="url(#skin)" stroke="#d69a68" stroke-width="2" />
+                            <rect x="6" y="-24" width="6" height="30" rx="3" fill="#2f3540" transform="rotate(24)" />
+                        </g>
+
+                        <g id="head" transform="translate(268,150)">
+                            <circle cx="0" cy="0" r="46" fill="url(#skin)" stroke="#d69a68" stroke-width="2" />
+                            <path
+                                d="M-44,-6 Q-52,-58 0,-56 Q54,-56 44,-4 Q46,-30 22,-42 Q30,-24 8,-34 Q10,-18 -14,-30 Q-10,-14 -30,-20 Q-30,-6 -44,-6 Z"
+                                fill="#1c1a19" />
+                            <g id="eyeLeft" class="eye">
+                                <circle cx="-16" cy="4" r="5.5" fill="#20211f" />
+                                <circle cx="-14" cy="2" r="1.6" fill="#fff" />
+                            </g>
+                            <g id="eyeRight" class="eye">
+                                <circle cx="16" cy="4" r="5.5" fill="#20211f" />
+                                <circle cx="18" cy="2" r="1.6" fill="#fff" />
+                            </g>
+                            <path d="M-8,20 Q0,25 8,20" fill="none" stroke="#8a4b2e" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <ellipse cx="-28" cy="14" rx="6" ry="4" fill="#ff9d8a" opacity="0.45" />
+                            <ellipse cx="28" cy="14" rx="6" ry="4" fill="#ff9d8a" opacity="0.45" />
+                        </g>
+                    </g>
+
+                    <g id="notebook" transform="translate(265,300)">
+                        <path d="M-95,10 L-4,0 L-4,55 L-95,50 Z" fill="#fbfaf5" stroke="#d8d3c2" stroke-width="2" />
+                        <g id="pageRight">
+                            <path d="M4,0 L95,10 L95,50 L4,55 Z" fill="#ffffff" stroke="#d8d3c2" stroke-width="2" />
+                            <path id="line1" class="ink" d="M14,14 Q40,11 78,15" fill="none" stroke="#33415c"
+                                stroke-width="2.4" stroke-linecap="round" pathLength="1" />
+                            <path id="line2" class="ink" d="M14,24 Q45,22 84,26" fill="none" stroke="#33415c"
+                                stroke-width="2.4" stroke-linecap="round" pathLength="1" />
+                            <path id="line3" class="ink" d="M14,34 Q40,32 76,36" fill="none" stroke="#33415c"
+                                stroke-width="2.4" stroke-linecap="round" pathLength="1" />
+                            <path id="line4" class="ink" d="M14,44 Q35,42 60,45" fill="none" stroke="#33415c"
+                                stroke-width="2.4" stroke-linecap="round" pathLength="1" />
+                        </g>
+                        <g id="flipPage">
+                            <path d="M4,0 L95,10 L95,50 L4,55 Z" fill="#f5f4ee" stroke="#d8d3c2" stroke-width="2" />
+                        </g>
+                        <circle cx="0" cy="6" r="2.4" fill="#b7b2a0" />
+                        <circle cx="0" cy="19" r="2.4" fill="#b7b2a0" />
+                        <circle cx="0" cy="32" r="2.4" fill="#b7b2a0" />
+                        <circle cx="0" cy="45" r="2.4" fill="#b7b2a0" />
+                    </g>
+                    
+                </svg>
 
 
             </div>
@@ -206,31 +365,32 @@
                 <div class="pyq-card">
                     <p class="year">2018</p>
                 </div>
-                 <div class="pyq-card">
+                <div class="pyq-card">
                     <p class="year">2018</p>
                 </div>
-                 <div class="pyq-card">
+                <div class="pyq-card">
                     <p class="year">2018</p>
                 </div>
-                 <div class="pyq-card">
+                <div class="pyq-card">
                     <p class="year">2018</p>
                 </div>
-                 <div class="pyq-card">
+                <div class="pyq-card">
                     <p class="year">2018</p>
                 </div>
-                 <div class="pyq-card">
+                <div class="pyq-card">
                     <p class="year">2018</p>
                 </div>
-                 <div class="pyq-card">
+                <div class="pyq-card">
                     <p class="year">2018</p>
                 </div>
 
             </div>
+            
 
 
         </section>
     </main>
-
+ <script src="script.js"></script>
 </body>
 
 </html>
