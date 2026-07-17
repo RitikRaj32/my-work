@@ -1,3 +1,4 @@
+
 * {
   padding: 0px;
   margin: 0px;
@@ -5,6 +6,7 @@
 
 main {
   display: flex;
+  min-height: 100vh;
   background-color: #f0f4ff;
 }
 
@@ -176,10 +178,8 @@ input:focus+.slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-#homepage {
+.page {
   margin-left: 260px;
-
-
 }
 
 /* style for wellcome message */
@@ -644,4 +644,15 @@ input:focus+.slider {
   width: 60px;
   filter: drop-shadow(5px 4px 6px rgba(130, 173, 230, 0.981));
 
+}
+/*styling the book section */
+#book-box{
+  height: 400px;
+}
+/*hide and show the pages */
+.page{
+  display: none;
+}
+.page.active{
+  display: block;
 }

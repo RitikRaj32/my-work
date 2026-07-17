@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +22,10 @@
             </div>
             <!-- making navbar option-->
             <div id="nav-option">
-                <button class="option" href=""><img src="home.png" class="icon">home</button>
-                <button class="option" href=""><img src="book.png" class="icon">books</button>
-                <button class="option" href=""><img src="test.png" class="icon">test</button>
-                <button class="option" href=""><img src="profile.png" class="icon">profile</button>
+                <button class="option" onclick="showPage('homepage')"><img src="home.png" class="icon">home</button>
+                <button class="option" onclick="showPage('books')" ><img src="book.png" class="icon">books</button>
+                <button class="option"  onclick="showPage('test')" ><img src="test.png" class="icon">test</button>
+                <button class="option" onclick="showPage('profile')" ><img src="profile.png" class="icon">profile</button>
             </div>
             <div id="nev-control"><img src="moon.png" class="icon">dark mode
                 <label class="switch">
@@ -40,7 +40,8 @@
     </header>
     <!--home page -->
     <main>
-        <section id="homepage">
+        <section id="homepage" class="page active">
+            
             <div id="wellcome">
                 <!-- add svg icon -->
                 <p id="smg1">hello, student !<svg id="helloicon" width="55px" height="55px" viewBox="0 0 64 64"
@@ -209,7 +210,7 @@
                         <rect x="160" y="70" width="210" height="270" rx="45" fill="#aeb2bc" opacity="0.4" />
                     </g>
 
-                    <g id="books">
+                    <g id="deskBooks">
                         <rect x="20" y="300" width="95" height="18" rx="4" fill="#c1662f" stroke="#8f4a1e"
                             stroke-width="2" />
                         <rect x="26" y="284" width="88" height="18" rx="4" fill="#4a6fa5" stroke="#31507c"
@@ -385,12 +386,33 @@
                 </div>
 
             </div>
-            
-
 
         </section>
+
+        <section id="books" class="page">
+            <div>
+                <h2>books</h2>
+               
+
+                
+            </div>
+        </section>
+
+        <section id="test" class="page">
+            <div>
+                <h2 class="subhead">test</h2>
+            </div>
+        </section>
+
+        <section id="profile" class="page">
+            <div>
+                <h2 class="subhead">profile</h2>
+            </div>
+        </section>
+
     </main>
- <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
