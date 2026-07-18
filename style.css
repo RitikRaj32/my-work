@@ -269,6 +269,7 @@ input:focus+.slider {
   margin: 50px 0px 0px 60px;
   font-size: 25px;
   font-family: "Albert Sans", sans-serif;
+  text-transform: capitalize;
 
 
 }
@@ -703,14 +704,74 @@ input:focus+.slider {
   filter: drop-shadow(5px 4px 6px rgba(130, 173, 230, 0.981));
 
 }
-/*styling the book section */
-#book-box{
-  height: 400px;
-}
 /*hide and show the pages */
 .page{
   display: none;
 }
 .page.active{
   display: block;
+}
+/* style the books page */
+#subhead2{
+  font-family:"Albert Sans", sans-serif ;
+  margin:100px 0px 0px 200px;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: black;
+}
+#book-para{
+  margin-left: 200px;
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 18px;
+  color: #dfdfdf;
+  background:linear-gradient(to right,#818cf8, #7b3ab8);
+  padding: 2px 8px 2px 8px;
+  border-radius: 8px;
+  display: inline;
+}
+
+.icons{
+  width: 74px;
+  height: 74px;
+  position: relative;
+  top: 10px;
+}
+/*now arrange and style the subject-box */
+#book-box{
+  height: 390px;
+  width: 900px;
+  display: flex;
+  margin: 30px 0px 0px 200px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.book-card{
+  height: 170px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+    border: 3px solid transparent;
+  border-radius: 15px;
+  background-image: 
+    linear-gradient(#fff, #fff), 
+    linear-gradient(to right, #818cf8, #7b3ab8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  gap: 12px;
+   transform: translateY(0) scale(1);
+  box-shadow: 0 4px 6px #818cf8 , 0 1px 3px  #7b3ab8;
+   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+}
+/* add animation or transaction when hover */
+.book-card:hover{
+   transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;
+    transform: translateY(-5px) scale(1.03);
 }
