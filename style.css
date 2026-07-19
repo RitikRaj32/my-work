@@ -775,3 +775,62 @@ input:focus+.slider {
     box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;
     transform: translateY(-5px) scale(1.03);
 }
+
+/*** style the mathmetics book section ***/
+.book-title{
+  margin: 90px 0px 0px 180px;
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+ 
+
+.box-chap{
+  width:900px ;
+  height: 800px;
+  
+  margin: 20px 0px 100px 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap:30px;
+}
+
+.chapter{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  border: 0.1px solid rgb(163, 158, 158); 
+  width: 900px;
+  height: 90px;
+  font-family:"Albert Sans", sans-serif ;
+background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px  #6671eb;
+}
+.math-chap-smg{
+  margin: 0px 0px 0px 400px;
+  color:black;
+  font-weight: 500;
+  font-size: 17px;
+  color: #08bf67;
+
+}
+.numbring{
+  padding:1.3rem;
+  border: none;
+  border-radius: 10px;
+  font-family:"Albert Sans", sans-serif ;
+  color:rgb(244, 244, 244);
+  font-weight:600;
+  font-size: 20px;
+  background-color: #6671eb; 
+}
+.chapter-title{
+  font-size: 20px;
+  font-weight: 550;
+  font-family:"Albert Sans", sans-serif;
+}

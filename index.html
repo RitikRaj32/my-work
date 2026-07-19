@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -22,10 +25,13 @@
             </div>
             <!-- making navbar option-->
             <div id="nav-option">
-                <button class="option" onclick="showPage('homepage')"><img src="/ICONS/home.png" class="icon">home</button>
-                <button class="option" onclick="showPage('books')" ><img src="/ICONS/book.png" class="icon">books</button>
-                <button class="option"  onclick="showPage('test')" ><img src="/ICONS/test.png" class="icon">test</button>
-                <button class="option" onclick="showPage('profile')" ><img src="/ICONS/profile.png" class="icon">profile</button>
+                <button class="option" onclick="showPage('homepage')"><img src="/ICONS/home.png"
+                        class="icon">home</button>
+                <button class="option" onclick="showPage('books')"><img src="/ICONS/book.png"
+                        class="icon">books</button>
+                <button class="option" onclick="showPage('test')"><img src="/ICONS/test.png" class="icon">test</button>
+                <button class="option" onclick="showPage('profile')"><img src="/ICONS/profile.png"
+                        class="icon">profile</button>
             </div>
             <div id="nev-control"><img src="/ICONS/moon.png" class="icon">dark mode
                 <label class="switch">
@@ -41,7 +47,7 @@
     <!--home page -->
     <main>
         <section id="homepage" class="page active">
-            
+
             <div id="wellcome">
                 <!-- add svg icon -->
                 <p id="smg1">hello, student !<svg id="helloicon" width="55px" height="55px" viewBox="0 0 64 64"
@@ -103,13 +109,13 @@
                     </svg></p>
                 <p id="smg2">Choose a subject below and start practicing questions for your BSE Odisha 10th board exam.
                 </p>
-                
+
             </div>
             <!-- making subject card-->
             <h2 class="subhead"><img class="subject-icon" src="/ICONS/subjects.png">subjects</h2>
             <div id="subject">
                 <div class="subject-card">
-                    <img  class="subject-icon" src="/ICONS/calculator.png">
+                    <img class="subject-icon" src="/ICONS/calculator.png">
                     <p class="subject-name">mathematics</p>
                     <p class="num-chapter">5 chapters</p>
                     <p class="practice1">let's practice</p>
@@ -130,7 +136,7 @@
                 </div>
 
                 <div class="subject-card">
-                    <img class="subject-icon"  src="/ICONS/science.png">
+                    <img class="subject-icon" src="/ICONS/science.png">
                     <p class="subject-name">science</p>
                     <p class="num-chapter">5 chapters</p>
                     <p class="practice1">let's practice</p>
@@ -150,7 +156,7 @@
                     <p class="practice4">let's practice</p>
                 </div>
                 <div class="subject-card">
-                    <img class="subject-icon"  src="/ICONS/hindi.png">
+                    <img class="subject-icon" src="/ICONS/hindi.png">
                     <p class="subject-name">hindi</p>
                     <p class="num-chapter">5 chapters</p>
                     <p class="practice5">let's practice</p>
@@ -333,7 +339,7 @@
                         <circle cx="0" cy="32" r="2.4" fill="#b7b2a0" />
                         <circle cx="0" cy="45" r="2.4" fill="#b7b2a0" />
                     </g>
-                    
+
                 </svg>
 
 
@@ -398,7 +404,7 @@
                         <img src="/ICONS/calculator.png" class="subject-icon">
                         <p class="books-name">Mathematics</p>
                     </div>
-                    <div class="book-card"onclick="showPage('science')">
+                    <div class="book-card" onclick="showPage('science')">
                         <img src="/ICONS/science.png" class="subject-icon">
                         <p class="books-name">science</p>
                     </div>
@@ -406,18 +412,19 @@
                         <img src="/ICONS/en.png" class="subject-icon">
                         <p class="books-name">english</p>
                     </div>
-                    <div class="book-card"onclick="showPage('odia')">
+                    <div class="book-card" onclick="showPage('odia')">
                         <img src="/ICONS/odia.png" class="subject-icon">
                         <p class="books-name">odia</p>
                     </div>
-                    <div class="book-card"onclick="showPage('history and political')">
+                    <div class="book-card" onclick="showPage('history and political')">
                         <img src="/ICONS/history.png" class="subject-icon">
                         <p class="books-name">history and political</p>
                     </div>
                     <div class="book-card" onclick="showPage('geography and economics')">
                         <img src="/ICONS/globe.png" class="subject-icon">
                         <p class="books-name">geography and economics</p>
-                    </div><div class="book-card" onclick="showPage('hindi')">
+                    </div>
+                    <div class="book-card" onclick="showPage('hindi')">
                         <img src="/ICONS/hindi.png" class="subject-icon">
                         <p class="books-name">hindi</p>
                     </div>
@@ -428,23 +435,65 @@
 
                 </div>
 
-                
+
             </div>
         </section>
 
         <div id="mathematics" class="page">
+           <p class="book-title"> <img src="/ICONS/maths-.png" class="icons">ମାଧ୍ୟମିକ ବୀଜଗଣିତ and ଜ୍ୟାମିତି</p>
+            <div class="box-chap">
+            <div class="chapter">
+                <p class="numbring">1</p>
+                <p class="chapter-title">ସରଳ ସହସମୀକରଣ</p>
+                <p class="math-chap-smg">view and download</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+              <div class="chapter">
+                <p class="numbring">2</p>
+                <p class="chapter-title">ଦ୍ଵିଘାତ ସମୀକରଣ</p>
+                <p class="math-chap-smg">view and download</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+              <div class="chapter">
+                <p class="numbring">3</p>
+                <p class="chapter-title">ସମାନ୍ତର ପ୍ରଗତି</p>
+                <p class="math-chap-smg">view and download</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+              <div class="chapter">
+                <p class="numbring">4</p>
+                <p class="chapter-title">ସମ୍ଭାବ୍ୟତା</p>
+                <p class="math-chap-smg">view and download</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+              <div class="chapter">
+                <p class="numbring">5</p>
+                <p class="chapter-title">ପରିସଂଖ୍ୟାନ</p>
+                <p class="math-chap-smg">view and download</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+              <div class="chapter">
+                <p class="numbring">6</p>
+                <p class="chapter-title">ସ୍ଥାନାଙ୍କ ଜ୍ୟାମିତି</p>
+                <p class="math-chap-smg">view and download</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+              <div class="chapter">
+                <p class="numbring">7</p>
+                <p class="chapter-title">ଉତ୍ତରମାଳା</p>
+                <p class="math-chap-smg">view and download</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
             
-            
-            
-            y</div>
+        </div>
         <div id="science" class="page">y</div>
         <div id="english" class="page">y</div>
         <div id="odia" class="page">y</div>
         <div id="history and political" class="page">y</div>
         <div id="geography and economics" class="page">y</div>
         <div id="hindi" class="page">y</div>
-         <div id="sanskrit" class="page">y</div>
-         
+        <div id="sanskrit" class="page">y</div>
+
         <section id="test" class="page">
             <div>
                 <h2 class="subhead2"><img src="/ICONS/test2.png=" class="icons">test</h2>
@@ -453,7 +502,7 @@
 
         <section id="profile" class="page">
             <div>
-                <h2 >profile</h2>
+                <h2>profile</h2>
             </div>
         </section>
 
