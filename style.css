@@ -772,8 +772,7 @@ input:focus+.slider {
 /* add animation or transaction when hover */
 .book-card:hover{
    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;
-    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;  
 }
 
 /*** style the mathmetics book section ***/
@@ -789,7 +788,7 @@ input:focus+.slider {
 
 .box-chap{
   width:900px ;
-  height: 800px;
+  height: 1500px;
   
   margin: 20px 0px 100px 180px;
   display: flex;
@@ -800,9 +799,12 @@ input:focus+.slider {
 }
 
 .chapter{
-  display: flex;
+   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0px 25px;
+  box-sizing: border-box;
   border: 0.1px solid rgb(163, 158, 158); 
   width: 900px;
   height: 90px;
@@ -810,17 +812,37 @@ input:focus+.slider {
 background-color: #fff;
   border-radius: 10px;
   box-shadow: 3px 3px 5px  #6671eb;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+  /* add transaction on math-chapter */
+  .chapter:hover{
+    transform: translateY(-5px) scale(1.03);
+    
+  }
 .math-chap-smg{
-  margin: 0px 0px 0px 400px;
-  color:black;
-  font-weight: 500;
-  font-size: 17px;
+flex-shrink: 0;
+  margin: 0px;
   color: #08bf67;
-
+  font-weight: 500;
+  font-size: 14px;
+  font-family:"Albert Sans", sans-serif;
+  background-color: rgba(11, 147, 81, 0.12);
+  padding: 6px 12px;
+  border-radius: 7px;
+  white-space: nowrap;
+}
+.math-chap-smg:hover{
+  background-color:rgba(13, 126, 69, 0.315) ;
 }
 .numbring{
-  padding:1.3rem;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 10px;
   font-family:"Albert Sans", sans-serif ;
@@ -830,7 +852,12 @@ background-color: #fff;
   background-color: #6671eb; 
 }
 .chapter-title{
+   flex: 1;
+  min-width: 0;
   font-size: 20px;
   font-weight: 550;
   font-family:"Albert Sans", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

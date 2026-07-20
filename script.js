@@ -22,3 +22,4 @@ function showPage(pageId){
     document.getElementById(pageId).classList.add("active");
 
 }
+//write function to open pdf
