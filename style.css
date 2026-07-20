@@ -861,3 +861,20 @@ flex-shrink: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* complete the style math-book part */
+
+/*now style different  the science-book part */
+.science-book{
+  height: 2200px;
+}
+.numbring1{
+  background-color: #09dd7a;
+}
+.science-chap-smg{
+  color: #bf0836;
+  background-color: #d28a9c57;
+}
+.science-chap-smg:hover{
+  background-color: #e73a6557;
+
+}
