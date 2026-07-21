@@ -802,6 +802,13 @@ input:focus+.slider {
   flex-direction: column;
   row-gap:30px;
 }
+.book-title-2{
+  align-self: self-start;
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
 
 .chapter{
    display: flex;
