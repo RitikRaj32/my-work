@@ -714,7 +714,7 @@ input:focus+.slider {
 /* style the books page */
 #subhead2{
   font-family:"Albert Sans", sans-serif ;
-  margin:100px 0px 0px 200px;
+  margin:20px 0px 0px 200px;
   font-size: 32px;
   text-transform: capitalize;
   color: black;
@@ -728,6 +728,12 @@ input:focus+.slider {
   padding: 2px 8px 2px 8px;
   border-radius: 8px;
   display: inline;
+}
+.books-name{
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .icons{
@@ -777,14 +783,13 @@ input:focus+.slider {
 
 /*** style the mathmetics book section ***/
 .book-title{
-  margin: 90px 0px 0px 180px;
+  margin: 20px 0px 0px 180px;
   font-family:"Albert Sans", sans-serif ;
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
- 
 
 .box-chap{
   width:900px ;
@@ -877,4 +882,84 @@ flex-shrink: 0;
 .science-chap-smg:hover{
   background-color: #e73a6557;
 
+}
+/* now style the back-button */
+.back-button{
+  margin: 100px 0px 0px 200px;
+  position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px 12px 18px;
+    border: none;
+    border-radius: 9px;
+    background-color: #000000;
+    color: white;
+    font-family: "Albert Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    overflow: hidden;
+    isolation: isolate;
+    transition: box-shadow 0.25s ease, transform 0.15s ease;
+  
+}
+/* gradient fill that sweeps in from the left on hover */
+  .back-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to right, #818cf8, #a855f7);
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+  }
+ 
+  .back-button:hover::before {
+    transform: translateX(0);
+  }
+ 
+  .back-button:hover {
+    box-shadow: 2px 2px 10px rgba(129, 140, 248, 0.55);
+  }
+ 
+  .back-button:active {
+    transform: scale(0.96);
+    box-shadow: 2px 2px 5px #6f7af1;
+  }
+ 
+  /* arrow glides left on hover, then a faint duplicate trails in behind it */
+  .back-button .arrow {
+    display: inline-flex;
+    transition: transform 0.3s ease;
+  }
+ 
+  .back-button:hover .arrow {
+    transform: translateX(-5px);
+    animation: nudge 0.9s ease-in-out infinite;
+  }
+ 
+  @keyframes nudge {
+    0%, 100% { transform: translateX(-5px); }
+    50% { transform: translateX(-9px); }
+  }
+ 
+  .back-button svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+ 
+  /* respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .back-button .arrow,
+    .back-button::before {
+      transition: none;
+      animation: none;
+    }
+  }
+
+.icon-back{
+  margin: 0px 6px 0px 0px;
 }
