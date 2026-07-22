@@ -22,4 +22,9 @@ function showPage(pageId){
     document.getElementById(pageId).classList.add("active");
 
 }
-//write function to open pdf
+// write function to constant color of selected navoption
+ function addbackground(btnid){
+    const menu=document.querySelectorAll(".option");
+    menu.forEach(Option => Option.classList.remove("selected"));
+    document.getElementById(btnid).classList.add("selected");
+ }

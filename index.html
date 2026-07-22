@@ -25,12 +25,17 @@
             </div>
             <!-- making navbar option-->
             <div id="nav-option">
-                <button class="option" onclick="showPage('homepage')"><img src="/ICONS/home.png"
+                <button class="option selected" id="home-option"
+                    onclick="showPage('homepage') ;addbackground('home-option')"><img src="/ICONS/home.png"
                         class="icon">home</button>
-                <button class="option" onclick="showPage('books')"><img src="/ICONS/book.png"
+                <button class="option" id="books-option"
+                    onclick="showPage('books');addbackground('books-option')"><img src="/ICONS/book.png"
                         class="icon">books</button>
-                <button class="option" onclick="showPage('test')"><img src="/ICONS/test.png" class="icon">test</button>
-                <button class="option" onclick="showPage('profile')"><img src="/ICONS/profile.png"
+                <button class="option" id="test-option"
+                    onclick="showPage('test');addbackground('test-option')"><img src="/ICONS/test.png"
+                        class="icon">test</button>
+                <button class="option" id="profile-option"
+                    onclick="showPage('profile');addbackground('profile-option')"><img src="/ICONS/profile.png"
                         class="icon">profile</button>
             </div>
             <div id="nev-control"><img src="/ICONS/moon.png" class="icon">dark mode
@@ -595,7 +600,7 @@
                     <p class="math-chap-smg science-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                 <p class="book-title-2"> <img src="/ICONS/atoms.png" class="icons">ଜୀବବିଜ୍ଞାନ</p>
+                <p class="book-title-2"> <img src="/ICONS/atoms.png" class="icons">ଜୀବବିଜ୍ଞାନ</p>
                 <div class="chapter" onclick="window.open('/document/science-book/sc2-1.pdf','_blank')">
                     <p class="numbring numbring1">10</p>
                     <p class="chapter-title">ପୋଷଣ</p>
@@ -664,94 +669,109 @@
         <div id="english" class="page">
             <button class="back-button" onclick="showPage('books')"><i
                     class="fa-solid fa-arrow-left icon-back"></i>back</button>
-                    <p class="book-title"> <img src="/ICONS/book4.png" class="icons"></p>
-            <div class="box-chap science-book">
+            <p class="book-title"><img src="/ICONS/book4.png" class="icons">english</p>
+            <div class="box-chap science-book" id="english-box">
                 <div class="chapter" onclick="window.open('/document/english book/Eng-10th 1.pdf', '_blank')">
-                    <p class="numbring numbring1">1</p>
-                    <p class="chapter-title">ରାସାୟନିକ ପ୍ରତିକ୍ରିୟା ଓ ରାସାୟନିକ ସମୀକରଣ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                    <p class="numbring numbring1 numbring2">1</p>
+                    <p class="chapter-title">All Things Bright & Beautiful<sub>(C. F. Alexander)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="chapter" onclick="window.open('/document/english book/Eng-10th 2.pdf','_blank')">
-                    <p class="numbring numbring1">2</p>
-                    <p class="chapter-title">ଅମ୍ଳ, କ୍ଷାରକ ଓ ଲବଣ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                    <p class="numbring numbring1 numbring2">2</p>
+                    <p class="chapter-title">A Letter to God<sub>(G. L. Fuentes)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="chapter" onclick="window.open('/document/english book/Eng-10th 3.pdf','_blank')">
-                    <p class="numbring numbring1">3</p>
-                    <p class="chapter-title">ଧାତୁ ଓ ଅଧାତୁ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 3.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">3</p>
+                    <p class="chapter-title">The Solitary Reaper<sub>(William Wordsworth)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="chapter" onclick="window.open('/document/english book/Eng-10th 4.pdf','_blank')">
-                    <p class="numbring numbring1">4</p>
-                    <p class="chapter-title">କାର୍ବନ ଓ ଏହାର ଯୌଗିକ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 4.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">4</p>
+                    <p class="chapter-title">At the High School<sub>(M. K. Gandhi)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="chapter" onclick="window.open('/document/english book/Eng-10th 5.pdf','_blank')">
-                    <p class="numbring numbring1">5</p>
-                    <p class="chapter-title">ମୌଳିକଗୁଡ଼ିକର ପର୍ଯ୍ୟାୟୀ ଶ୍ରେଣୀକରଣ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 5.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">5</p>
+                    <p class="chapter-title">Village Song<sub>Sarojini Naidu</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="chapter" onclick="window.open('/document/english book/Eng-10th 6.pdf','_blank')">
-                    <p class="numbring numbring1">6</p>
-                    <p class="chapter-title">ଆଲୋକ- ପ୍ରତିଫଳନ ଓ ପ୍ରତିସରଣ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 6.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">6</p>
+                    <p class="chapter-title">Festivals of North-East India<sub>(Compiled/Editorial)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="chapter" onclick="window.open('/document/english book/Eng-10th 7.pdf','_blank')">
-                    <p class="numbring numbring1">7</p>
-                    <p class="chapter-title">ମାନବ ଚକ୍ଷୁ ଓ ରଙ୍ଗବେରଙ୍ଗ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 7.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">7</p>
+                    <p class="chapter-title">The Flower-School<sub>(Rabindranath Tagore)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="chapter" onclick="window.open('/document/english book/Eng-10th 8.pdf','_blank')">
-                    <p class="numbring numbring1">8</p>
-                    <p class="chapter-title">ବିଦ୍ୟୁତ୍</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 8.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">8</p>
+                    <p class="chapter-title">Air Pollution: A Hidden Menace<sub>(Compiled/Editorial)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="chapter" onclick="window.open('/document/english book/Eng-10th 9.pdf','_blank')">
-                    <p class="numbring numbring1">9</p>
-                    <p class="chapter-title">ବିଦ୍ୟୁତ୍ ସ୍ରୋତର ଚୁମ୍ବକୀୟ ପ୍ରଭାବ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 9.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">9</p>
+                    <p class="chapter-title">From the Formalin Jar<sub>(Dr. Rita S. Mani)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="chapter"
+                    onclick="window.open('/document/english book/English_10th_English 10.pdf','_blank')">
+                    <p class="numbring numbring1 numbring2">9</p>
+                    <p class="chapter-title">School's Goodbye<sub>(Lord Eustace Percy)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="chapter" onclick="window.open('/document/english book/Eng-10th ND 1.pdf','_blank')">
-                    <p class="numbring numbring1">10</p>
-                    <p class="chapter-title">ପୋଷଣ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                    <p class="numbring numbring1 numbring2">10</p>
+                    <p class="chapter-title">A Tiger in the House<sub>(Ruskin Bond)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="chapter" onclick="window.open('/document/english book/Eng-10th ND 2.pdf','_blank')">
-                    <p class="numbring numbring1">11</p>
-                    <p class="chapter-title">ଶ୍ଵସନ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                    <p class="numbring numbring1 numbring2">11</p>
+                    <p class="chapter-title">The Beggar<sub>(Anton Chekhov)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="chapter" onclick="window.open('/document/english book/Eng-10th ND 3.pdf','_blank')">
-                    <p class="numbring numbring1">12</p>
-                    <p class="chapter-title">ପରିବହନ ଓ ସଞ୍ଚାଳନ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                    <p class="numbring numbring1 numbring2">12</p>
+                    <p class="chapter-title">The Village Judge<sub>(Munshi Premchand)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="chapter" onclick="window.open('/document/english book/Eng-10th ND 4.pdf','_blank')">
-                    <p class="numbring numbring1">13</p>
-                    <p class="chapter-title">ରେଚନ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                    <p class="numbring numbring1 numbring2">13</p>
+                    <p class="chapter-title">A Grain as big as a Hen's Egg<sub>(Leo Tolstoy)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 <div class="chapter" onclick="window.open('/document/english book/Eng-10th ND 5.pdf','_blank')">
-                    <p class="numbring numbring1">14</p>
-                    <p class="chapter-title">ନିୟନ୍ତ୍ରଣ ଓ ସମନ୍ଵୟ</p>
-                    <p class="math-chap-smg science-chap-smg">view and download</p>
+                    <p class="numbring numbring1 numbring2">14</p>
+                    <p class="chapter-title">A Great Son of India<sub>(Biographical adaptation on Dr. A. P. J. Abdul
+                            Kalam)</sub></p>
+                    <p class="math-chap-smg science-chap-smg english-chap-smg">view and download</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
-             
-     
+
+
             </div>
         </div>
         <div id="odia" class="page">

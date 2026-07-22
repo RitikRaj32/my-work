@@ -1,4 +1,3 @@
-
 * {
   padding: 0px;
   margin: 0px;
@@ -80,10 +79,8 @@ main {
   background-color: #252542;
 }
 
-.option:active {
+.selected{
   background: linear-gradient(to right, #818cf8, #a855f7);
-  box-shadow: 2px 2px 5px #6f7af1;
-
 }
 
 #nev-control {
@@ -309,13 +306,15 @@ input:focus+.slider {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 /* now making transation when hover */
 .subject-card:hover {
-  
+
   transform: translateY(-10px);
 
   box-shadow: 0 15px 30px rgba(191, 113, 211, 0.916);
 }
+
 .subject-name {
   font-family: "Albert Sans", sans-serif;
   font-size: 16px;
@@ -328,54 +327,61 @@ input:focus+.slider {
   font-size: 12px;
   color: #838389;
 }
-.practice1{
-  background-color:rgba(197, 233, 197, 0.651);
+
+.practice1 {
+  background-color: rgba(197, 233, 197, 0.651);
   padding: 2px 6px 2px 6px;
   border-radius: 7px;
   color: green;
   font-family: "Albert Sans", sans-serif;
   font-size: 13px;
 }
-.practice2{
-  background-color:rgba(196, 218, 237, 0.699);
+
+.practice2 {
+  background-color: rgba(196, 218, 237, 0.699);
   padding: 2px 6px 2px 6px;
   border-radius: 7px;
   color: rgb(3, 114, 155);
   font-family: "Albert Sans", sans-serif;
   font-size: 13px;
 }
-.practice3{
-  background-color:rgba(236, 192, 192, 0.699);
-   padding: 2px 6px 2px 6px;
+
+.practice3 {
+  background-color: rgba(236, 192, 192, 0.699);
+  padding: 2px 6px 2px 6px;
   border-radius: 7px;
   color: rgb(239, 7, 7);
   font-family: "Albert Sans", sans-serif;
   font-size: 13px;
 }
-.practice4{
-  background-color:rgba(228, 192, 170, 0.716);
-   padding: 2px 6px 2px 6px;
+
+.practice4 {
+  background-color: rgba(228, 192, 170, 0.716);
+  padding: 2px 6px 2px 6px;
   border-radius: 7px;
   color: rgb(255, 102, 0);
   font-family: "Albert Sans", sans-serif;
   font-size: 13px;
 }
-.practice5{
-  background-color:rgba(236, 165, 232, 0.716);
-   padding: 2px 6px 2px 6px;
+
+.practice5 {
+  background-color: rgba(236, 165, 232, 0.716);
+  padding: 2px 6px 2px 6px;
   border-radius: 7px;
   color: rgb(255, 0, 234);
   font-family: "Albert Sans", sans-serif;
   font-size: 13px;
 }
-.practice6{
-  background-color:rgba(201, 161, 230, 0.716);
-   padding: 2px 6px 2px 6px;
+
+.practice6 {
+  background-color: rgba(201, 161, 230, 0.716);
+  padding: 2px 6px 2px 6px;
   border-radius: 7px;
   color: rgb(191, 0, 255);
   font-family: "Albert Sans", sans-serif;
   font-size: 13px;
 }
+
 /* subject box design complete */
 
 /* hide unnessary box */
@@ -415,8 +421,9 @@ input:focus+.slider {
   justify-content: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 /* making transition for pyq-card */
-.pyq-card:hover{
+.pyq-card:hover {
   transform: translateY(-10px);
 
   box-shadow: 0 10px 30px #6f7af1;
@@ -704,46 +711,52 @@ input:focus+.slider {
   filter: drop-shadow(5px 4px 6px rgba(130, 173, 230, 0.981));
 
 }
+
 /*hide and show the pages */
-.page{
+.page {
   display: none;
 }
-.page.active{
+
+.page.active {
   display: block;
 }
+
 /* style the books page */
-#subhead2{
-  font-family:"Albert Sans", sans-serif ;
-  margin:20px 0px 0px 200px;
+#subhead2 {
+  font-family: "Albert Sans", sans-serif;
+  margin: 20px 0px 0px 200px;
   font-size: 32px;
   text-transform: capitalize;
   color: black;
 }
-#book-para{
+
+#book-para {
   margin-left: 200px;
-  font-family:"Albert Sans", sans-serif ;
+  font-family: "Albert Sans", sans-serif;
   font-size: 18px;
   color: #dfdfdf;
-  background:linear-gradient(to right,#818cf8, #7b3ab8);
+  background: linear-gradient(to right, #818cf8, #7b3ab8);
   padding: 2px 8px 2px 8px;
   border-radius: 8px;
   display: inline;
 }
-.books-name{
-  font-family:"Albert Sans", sans-serif ;
+
+.books-name {
+  font-family: "Albert Sans", sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.icons{
+.icons {
   width: 74px;
   height: 74px;
   position: relative;
   top: 10px;
 }
+
 /*now arrange and style the subject-box */
-#book-box{
+#book-box {
   height: 390px;
   width: 900px;
   display: flex;
@@ -753,7 +766,8 @@ input:focus+.slider {
   flex-wrap: wrap;
   gap: 25px;
 }
-.book-card{
+
+.book-card {
   height: 170px;
   width: 200px;
   display: flex;
@@ -761,93 +775,99 @@ input:focus+.slider {
   align-items: center;
   justify-content: center;
   background-color: white;
-    border: 3px solid transparent;
+  border: 3px solid transparent;
   border-radius: 15px;
-  background-image: 
-    linear-gradient(#fff, #fff), 
+  background-image:
+    linear-gradient(#fff, #fff),
     linear-gradient(to right, #818cf8, #7b3ab8);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   gap: 12px;
-   transform: translateY(0) scale(1);
-  box-shadow: 0 4px 6px #818cf8 , 0 1px 3px  #7b3ab8;
-   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
-              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  
+  transform: translateY(0) scale(1);
+  box-shadow: 0 4px 6px #818cf8, 0 1px 3px #7b3ab8;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
 }
+
 /* add animation or transaction when hover */
-.book-card:hover{
-   transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;  
+.book-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;
 }
 
 /*** style the mathmetics book section ***/
-.book-title{
+.book-title {
   margin: 20px 0px 0px 180px;
-  font-family:"Albert Sans", sans-serif ;
+  font-family: "Albert Sans", sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
 
-.box-chap{
-  width:900px ;
+.box-chap {
+  width: 900px;
   height: 1500px;
-  
+
   margin: 20px 0px 100px 180px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  row-gap:30px;
+  row-gap: 30px;
 }
-.book-title-2{
+
+.book-title-2 {
   align-self: self-start;
-  font-family:"Albert Sans", sans-serif ;
+  font-family: "Albert Sans", sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.chapter{
-   display: flex;
+.chapter {
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   padding: 0px 25px;
   box-sizing: border-box;
-  border: 0.1px solid rgb(163, 158, 158); 
+  border: 0.1px solid rgb(163, 158, 158);
   width: 900px;
   height: 90px;
-  font-family:"Albert Sans", sans-serif ;
-background-color: #fff;
+  font-family: "Albert Sans", sans-serif;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px  #6671eb;
+  box-shadow: 3px 3px 5px #6671eb;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-  /* add transaction on math-chapter */
-  .chapter:hover{
-    transform: translateY(-5px) scale(1.03);
-    
-  }
-.math-chap-smg{
-flex-shrink: 0;
+
+/* add transaction on math-chapter */
+.chapter:hover {
+  transform: translateY(-5px) scale(1.03);
+
+}
+
+.math-chap-smg {
+  flex-shrink: 0;
   margin: 0px;
   color: #08bf67;
   font-weight: 500;
   font-size: 14px;
-  font-family:"Albert Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   background-color: rgba(11, 147, 81, 0.12);
   padding: 6px 12px;
   border-radius: 7px;
   white-space: nowrap;
 }
-.math-chap-smg:hover{
-  background-color:rgba(13, 126, 69, 0.315) ;
+
+.math-chap-smg:hover {
+  background-color: rgba(13, 126, 69, 0.315);
 }
-.numbring{
+
+.numbring {
   flex-shrink: 0;
   width: 44px;
   height: 44px;
@@ -857,116 +877,148 @@ flex-shrink: 0;
   justify-content: center;
   border: none;
   border-radius: 10px;
-  font-family:"Albert Sans", sans-serif ;
-  color:rgb(244, 244, 244);
-  font-weight:600;
+  font-family: "Albert Sans", sans-serif;
+  color: rgb(244, 244, 244);
+  font-weight: 600;
   font-size: 20px;
-  background-color: #6671eb; 
+  background-color: #6671eb;
 }
-.chapter-title{
-   flex: 1;
+
+.chapter-title {
+  flex: 1;
   min-width: 0;
   font-size: 20px;
   font-weight: 550;
-  font-family:"Albert Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 /* complete the style math-book part */
 
 /*now style different  the science-book part */
-.science-book{
+.science-book {
   height: 2200px;
 }
-.numbring1{
+
+.numbring1 {
   background-color: #09dd7a;
 }
-.science-chap-smg{
+
+.science-chap-smg {
   color: #bf0836;
   background-color: #d28a9c57;
 }
-.science-chap-smg:hover{
+
+.science-chap-smg:hover {
   background-color: #e73a6557;
 
 }
+
 /* now style the back-button */
-.back-button{
-  margin: 100px 0px 0px 200px;
+.back-button {
+  margin: 60px 0px 0px 200px;
   position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 22px 12px 18px;
-    border: none;
-    border-radius: 9px;
-    background-color: #000000;
-    color: white;
-    font-family: "Albert Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: capitalize;
-    cursor: pointer;
-    overflow: hidden;
-    isolation: isolate;
-    transition: box-shadow 0.25s ease, transform 0.15s ease;
-  
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background-color: #000000;
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition: box-shadow 0.25s ease, transform 0.15s ease;
+
 }
+
 /* gradient fill that sweeps in from the left on hover */
-  .back-button::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background: linear-gradient(to right, #818cf8, #a855f7);
-    transform: translateX(-100%);
-    transition: transform 0.35s ease;
-  }
- 
-  .back-button:hover::before {
-    transform: translateX(0);
-  }
- 
-  .back-button:hover {
-    box-shadow: 2px 2px 10px rgba(129, 140, 248, 0.55);
-  }
- 
-  .back-button:active {
-    transform: scale(0.96);
-    box-shadow: 2px 2px 5px #6f7af1;
-  }
- 
-  /* arrow glides left on hover, then a faint duplicate trails in behind it */
-  .back-button .arrow {
-    display: inline-flex;
-    transition: transform 0.3s ease;
-  }
- 
-  .back-button:hover .arrow {
+.back-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #818cf8, #a855f7);
+  transform: translateX(-100%);
+  transition: transform 0.35s ease;
+}
+
+.back-button:hover::before {
+  transform: translateX(0);
+}
+
+.back-button:hover {
+  box-shadow: 2px 2px 10px rgba(129, 140, 248, 0.55);
+}
+
+.back-button:active {
+  transform: scale(0.96);
+  box-shadow: 2px 2px 5px #6f7af1;
+}
+
+/* arrow glides left on hover, then a faint duplicate trails in behind it */
+.back-button .arrow {
+  display: inline-flex;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover .arrow {
+  transform: translateX(-5px);
+  animation: nudge 0.9s ease-in-out infinite;
+}
+
+@keyframes nudge {
+
+  0%,
+  100% {
     transform: translateX(-5px);
-    animation: nudge 0.9s ease-in-out infinite;
-  }
- 
-  @keyframes nudge {
-    0%, 100% { transform: translateX(-5px); }
-    50% { transform: translateX(-9px); }
-  }
- 
-  .back-button svg {
-    width: 18px;
-    height: 18px;
-    display: block;
-  }
- 
-  /* respect reduced motion preference */
-  @media (prefers-reduced-motion: reduce) {
-    .back-button .arrow,
-    .back-button::before {
-      transition: none;
-      animation: none;
-    }
   }
 
-.icon-back{
+  50% {
+    transform: translateX(-9px);
+  }
+}
+
+.back-button svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+  .back-button .arrow,
+  .back-button::before {
+    transition: none;
+    animation: none;
+  }
+}
+
+.icon-back {
   margin: 0px 6px 0px 0px;
+}
+
+/* style differently in english book part */
+#english-box {
+  height: 1550px;
+}
+/* style different on english-book */
+.numbring2{
+  background-color: #c813d1;
+}
+.english-chap-smg{
+  color: #1274d5;
+  background-color:#91c4f790 ;
+}
+.english-chap-smg:hover{
+  
+  background-color:#58abfe90 ;
 }
