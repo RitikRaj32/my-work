@@ -1008,7 +1008,7 @@ input:focus+.slider {
 
 /* style differently in english book part */
 #english-box {
-  height: 1550px;
+  height: 1650px;
 }
 /* style different on english-book */
 .numbring2{
@@ -1021,4 +1021,24 @@ input:focus+.slider {
 .english-chap-smg:hover{
   
   background-color:#58abfe90 ;
+}
+/* style different on hindi book */
+.hindi-smg{
+  color: #e8660f;
+  background-color:#e0b39593 ;
+
+}
+.hindi-smg:hover{
+  background-color:#e0946293 ;
+}
+.numbring3{
+  background-color: #e51170;
+
+}
+.hindi-sub{
+  font-size: 25px;
+  font-family:"Albert Sans", sans-serif ;
+  font-weight:600;
+  align-self: flex-start;
+
 }
