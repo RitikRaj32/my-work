@@ -757,14 +757,15 @@ input:focus+.slider {
 
 /*now arrange and style the subject-box */
 #book-box {
-  height: 390px;
+  height: 590px;
   width: 900px;
   display: flex;
-  margin: 30px 0px 0px 200px;
+  margin: 30px 0px 200px 200px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+ 
 }
 
 .book-card {
