@@ -1043,3 +1043,16 @@ input:focus+.slider {
   align-self: flex-start;
 
 }
+.hindigr{
+  height: 1300px;
+}
+.numbring4{
+  background-color:rgb(255, 111, 0);
+}
+.hindigr-smg{
+  background-color:#add37f6b ;
+  color: #386205;
+}
+.hindigr-smg:hover{
+   background-color:#92db396b ;
+}
