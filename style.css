@@ -1041,7 +1041,7 @@ input:focus+.slider {
   font-family:"Albert Sans", sans-serif ;
   font-weight:600;
   align-self: flex-start;
-
+/* hindi grammar styling */
 }
 .hindigr{
   height: 1300px;
@@ -1055,4 +1055,18 @@ input:focus+.slider {
 }
 .hindigr-smg:hover{
    background-color:#92db396b ;
+}
+/* sanskrit book styling*/
+.sanskritbook-box{
+  height: 500px;
+}
+.numbring5{
+  background-color: #d62ae5;
+}
+.sanskrit-smg{
+  color:rgb(144, 93, 0);
+  background-color:rgba(225, 191, 127, 0.474);
+}
+.sanskrit-smg:hover{
+  background-color: rgba(222, 168, 68, 0.474);
 }
