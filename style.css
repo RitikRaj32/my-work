@@ -49,7 +49,6 @@ main {
   height: 350px;
 
 }
-
 /* styling nemu option  */
 
 .option {
@@ -1069,4 +1068,18 @@ input:focus+.slider {
 }
 .sanskrit-smg:hover{
   background-color: rgba(222, 168, 68, 0.474);
+}
+/*history and poltical section styling */
+.history-box{
+  height: 900px;
+}
+.numbring6{
+  background-color: #15616d;
+}
+.history-smg{
+color: #78290f;
+background-color:rgba(173, 71, 71, 0.484) ;
+}
+.history-smg:hover{
+  background-color:rgba(200, 71, 71, 0.584) ;
 }
