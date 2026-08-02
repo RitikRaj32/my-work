@@ -1083,3 +1083,7 @@ background-color:rgba(173, 71, 71, 0.484) ;
 .history-smg:hover{
   background-color:rgba(200, 71, 71, 0.584) ;
 }
+/*odia grammar box size manage */
+.odiagr-box{
+  height:800px;
+}
