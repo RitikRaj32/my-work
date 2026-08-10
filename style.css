@@ -1108,5 +1108,7 @@ width:850px
   font-size: 18px;
   text-align: center;
   color: #ff0000;
+  text-transform: capitalize;
+  margin-left: 190px;
 
 }
