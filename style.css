@@ -1094,3 +1094,19 @@ background-color:rgba(173, 71, 71, 0.484) ;
 .numbring7{
   background-color: #4a156d;
 }
+/* style the odia book section */
+#odia-box{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+margin-left: 200px;
+width:850px
+}
+#odiaerror{
+  font-family: "Albert Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #ff0000;
+
+}
