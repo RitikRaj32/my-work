@@ -304,6 +304,7 @@ input:focus+.slider {
   gap: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 /* now making transation when hover */
@@ -419,6 +420,7 @@ input:focus+.slider {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 /* making transition for pyq-card */
@@ -782,6 +784,7 @@ input:focus+.slider {
   box-shadow: 0 4px 6px #818cf8, 0 1px 3px #7b3ab8;
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
     box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
 
 }
 
@@ -1110,8 +1113,7 @@ width:850px
 
 /*style the profile page */
 #profile-page{
-  border: 1px solid black;
-  width: 600px;
+  width: 500px;
   height: 400px;
   margin: 10px 0px 0px 250px;
   display: flex;
@@ -1119,7 +1121,7 @@ width:850px
   flex-direction: column;
 }
 #box-top1{
-  width: 600px;
+  width: 500px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -1131,17 +1133,23 @@ width:850px
   background-color:#f0f4ff ;
   width: 70px;
   height: 35px;
-  margin:0px 180px 0px 0px  ;
+ margin: 0px 130px 0px 0px;
   font-size: 17px;
   font-family:"Albert Sans", sans-serif ;
   font-weight: 500;
   border: none;
+  cursor: pointer;
 }
+#back-profile:active{
+ transform: scale(0.95); 
+}
+
 #profile-title{
   font-family:"Albert Sans", sans-serif ;
   font-size: 21px;
   font-weight: 700;
-  margin: 0px 210px 0px 0px ;
+  margin: 0px 160px 0px 0px ;
+  
   text-transform: capitalize;
 }
 .settings{
@@ -1149,8 +1157,75 @@ width:850px
   height: 40px;
   background-color:#f0f4ff ;
   border: none;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border: 0.7px solid #6c6d6f;
+  border-radius: 5px;
+}
+.settings:active{
+  transform:scale(0.95);
 }
 #profile-icon{
   size: fill;
   
+}
+#profile-info{
+  border: 1px solid #6c6d6f;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+  background-color: #f5f7ff;
+}
+#profile-dp{
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 30px 0px 0px 0px;
+}
+#name-std{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-transform: capitalize;
+font-weight: 500;
+font-size: 22px;
+color: black;
+}
+#std-class{
+  font-family: "Albert Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4b4c4d;
+}
+#std-school{
+  font-family: "Albert Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #545557;
+  text-transform: capitalize;
+
+}
+#edit-profile{
+  margin: 10px 0px 0px 0px;
+  height: 35px;
+  width: 120px;
+  background-image: linear-gradient(to right,#818cf8, #a855f7);
+  border-radius: 5px;
+  color: white;
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: 5px;
+}
+#edit-profile:active{
+  transform: scale(0.95);
 }
