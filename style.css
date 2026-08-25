@@ -1112,19 +1112,13 @@ width:850px
 }
 
 /*style the profile page */
-#profile-page{
-  width: 500px;
-  height: 400px;
-  margin: 10px 0px 0px 250px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+
 #box-top1{
   width: 500px;
   height: 50px;
   display: flex;
   align-items: center;
+  margin: 0px 0px 0px 250px;
   
     background-color: #f0f4ff;
 }
@@ -1180,13 +1174,22 @@ width:850px
   gap: 10px;
   border-radius: 15px;
   background-color: #f5f7ff;
+  margin: 0px 0px 0px 250px;
 }
 #profile-dp{
   width: 90px;
   height: 90px;
-  border: 1px solid black;
+  border:none;
   border-radius: 50%;
   margin: 30px 0px 0px 0px;
+  object-fit: cover;
+}
+#profile-dp img{
+   width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+
 }
 #name-std{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -1228,4 +1231,97 @@ color: black;
 }
 #edit-profile:active{
   transform: scale(0.95);
+}
+/* style the over-view */
+#overview{
+  margin: 10px 0px 10px 250px;
+  font-family: "Albert Sans", sans-serif ;
+  font-size: 14px;
+  color:#545557;
+  font-weight: 700;
+  text-transform:uppercase;
+}
+#overview-box{
+  height: 90px;
+  width: 500px;
+  margin:0px 0px 0px 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+.overview-box1{
+width:110px;
+height: 80px;
+border:1px solid #545557 ;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+background-color:#f5f7ff ;
+border-radius: 10px;
+}
+.overview-style1{
+  font-weight: 600;
+  font-family:"Albert Sans", sans-serif  ;
+  font-size: 18px;
+  color: black;
+}
+.overview-style2{
+  color: #545557;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* style the subject progress bar */
+#subject-over{
+  margin: 10px 0px 0px 250px ;
+  font-family:"Albert Sans", sans-serif ;
+  color:#545557 ;
+  text-transform: uppercase;
+  font-size:14px;
+  font-weight:700;
+}
+#subject-progress{
+  border: 0.001em solid #545557;
+  width:500px;
+  height:320px;
+  margin: 10px 0px 400px 250px;
+  border-radius: 10px;
+  background-color:#f5f7ff ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center; 
+}
+.subject-bar{
+  width: 500px;
+  height:20px;
+display: flex;
+align-items: center;
+
+}
+.sub-wise-name{
+  margin: 0px 0px 0px 20px ;
+  font-family:"Albert Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  
+}
+.subject-progress-bar{
+  width: 480px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d5def9;
+}
+.percentage{
+  display: flex;
+  position: absolute;
+  right:530px;
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 16px;
+  font-weight: 400;
+
 }
