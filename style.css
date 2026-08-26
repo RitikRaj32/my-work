@@ -1286,8 +1286,8 @@ border-radius: 10px;
 #subject-progress{
   border: 0.001em solid #545557;
   width:500px;
-  height:320px;
-  margin: 10px 0px 400px 250px;
+  height:360px;
+  margin: 10px 0px 0px 250px;
   border-radius: 10px;
   background-color:#f5f7ff ;
   display: flex;
@@ -1324,4 +1324,44 @@ align-items: center;
   font-size: 16px;
   font-weight: 400;
 
+}
+#view-detail{
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 18px;
+  font-weight:400;
+  color: #089949;
+  cursor: pointer;
+  margin: 10px 0px 0px 0px ;
+}
+#Account-para{
+  font-family:"Albert Sans", sans-serif;
+  font-size: 14px;
+  font-weight:700;
+  text-transform: uppercase;
+  color:#545557 ;
+  margin: 20px 0px 0px 250px;
+
+}
+#account-box{
+  border: 1px solid #545557;
+  margin: 10px 0px 300px 250px ;
+  height: 50px;
+  width: 500px;
+  display:flex;
+  align-items: center;
+  border-radius: 10px;
+
+}
+#log-out{
+  color: red;
+  margin: 0px 0px 0px 10px;
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 16px;
+  font-weight:600 ;
+  cursor: pointer;
+}
+.logout-icon{
+  color: red;
+  margin:0px 0px 0px 10px ;
+  cursor: pointer;
 }
