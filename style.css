@@ -9,6 +9,7 @@ main {
   background-color: #f0f4ff;
 }
 
+
 /* style the side black nav-bar */
 
 .navbar {
@@ -709,7 +710,7 @@ input:focus+.slider {
 .subject-icon {
   height: 60px;
   width: 60px;
-  filter: drop-shadow(5px 4px 6px rgba(130, 173, 230, 0.981));
+  ;
 
 }
 
@@ -781,7 +782,6 @@ input:focus+.slider {
   border-radius: 15px;
   gap: 12px;
   transform: translateY(0) scale(1);
-  box-shadow: 0 4px 6px #818cf8, 0 1px 3px #7b3ab8;
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
     box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     cursor: pointer;
@@ -837,7 +837,6 @@ input:focus+.slider {
   font-family: "Albert Sans", sans-serif;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px #6671eb;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -899,11 +898,6 @@ input:focus+.slider {
 .science-book {
   height: 2200px;
 }
-
-.numbring1 {
-  background-color: #09dd7a;
-}
-
 .science-chap-smg {
   color: #bf0836;
   background-color: #d28a9c57;
@@ -1009,12 +1003,9 @@ input:focus+.slider {
   height: 1650px;
 }
 /* style different on english-book */
-.numbring2{
-  background-color: #c813d1;
-}
 .english-chap-smg{
-  color: #1274d5;
-  background-color:#91c4f790 ;
+  color: #057ff8;
+   ;
 }
 .english-chap-smg:hover{
   
@@ -1022,16 +1013,12 @@ input:focus+.slider {
 }
 /* style different on hindi book */
 .hindi-smg{
-  color: #e8660f;
+  color: #7f3300;
   background-color:#e0b39593 ;
 
 }
 .hindi-smg:hover{
   background-color:#e0946293 ;
-}
-.numbring3{
-  background-color: #e51170;
-
 }
 .hindi-sub{
   font-size: 25px;
@@ -1042,9 +1029,6 @@ input:focus+.slider {
 }
 .hindigr{
   height: 1300px;
-}
-.numbring4{
-  background-color:rgb(255, 111, 0);
 }
 .hindigr-smg{
   background-color:#add37f6b ;
@@ -1057,9 +1041,6 @@ input:focus+.slider {
 .sanskritbook-box{
   height: 500px;
 }
-.numbring5{
-  background-color: #d62ae5;
-}
 .sanskrit-smg{
   color:rgb(144, 93, 0);
   background-color:rgba(225, 191, 127, 0.474);
@@ -1070,9 +1051,6 @@ input:focus+.slider {
 /*history and poltical section styling */
 .history-box{
   height: 900px;
-}
-.numbring6{
-  background-color: #15616d;
 }
 .history-smg{
 color: #78290f;
@@ -1088,9 +1066,6 @@ background-color:rgba(173, 71, 71, 0.484) ;
 /* style english grammar section */
 .englishgr-box{
   height: 1100px;
-}
-.numbring7{
-  background-color: #4a156d;
 }
 /* style the odia book section */
 #odia-box{
@@ -1364,4 +1339,11 @@ align-items: center;
   color: red;
   margin:0px 0px 0px 10px ;
   cursor: pointer;
+}
+.dark-mode{
+  background-color: black;
+  color: white;
+  border: 3px solid #1B2CC1;
+
+
 }

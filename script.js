@@ -28,3 +28,11 @@ function showPage(pageId){
     menu.forEach(Option => Option.classList.remove("selected"));
     document.getElementById(btnid).classList.add("selected");
  }
+ //write function for chanage the mode light to dark 
+ function changemode(){
+    const darkBtn = document.getElementById('darkbtn');
+    const mode=document.querySelectorAll(".darkfn");
+    mode.forEach(darkfn => darkfn.classList.toggle("dark-mode", darkBtn.checked));
+
+ }
+
