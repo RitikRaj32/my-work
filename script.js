@@ -32,7 +32,9 @@ function showPage(pageId){
  function changemode(){
     const darkBtn = document.getElementById('darkbtn');
     const mode=document.querySelectorAll(".darkfn");
+    const mode2=document.querySelectorAll(".darkfn2");
     mode.forEach(darkfn => darkfn.classList.toggle("dark-mode", darkBtn.checked));
+    mode2.forEach(darkfn2 =>darkfn2.classList.toggle("dark-mode2",darkBtn.checked));
 
  }
 

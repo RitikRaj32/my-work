@@ -1088,7 +1088,7 @@ width:850px
 
 /*style the profile page */
 
-#box-top1{
+.box-top1{
   width: 500px;
   height: 50px;
   display: flex;
@@ -1098,7 +1098,7 @@ width:850px
     background-color: #f0f4ff;
 }
 /* style the the top of the profile */
-#back-profile{
+.back-profile{
   background-color:#f0f4ff ;
   width: 70px;
   height: 35px;
@@ -1139,7 +1139,7 @@ width:850px
   size: fill;
   
 }
-#profile-info{
+.profile-info{
   border: 1px solid #6c6d6f;
   width: 500px;
   height: 300px;
@@ -1166,20 +1166,20 @@ width:850px
   object-position: center;
 
 }
-#name-std{
+.name-std{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 text-transform: capitalize;
 font-weight: 500;
 font-size: 22px;
 color: black;
 }
-#std-class{
+.std-class{
   font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #4b4c4d;
 }
-#std-school{
+.std-school{
   font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1208,7 +1208,7 @@ color: black;
   transform: scale(0.95);
 }
 /* style the over-view */
-#overview{
+.overview{
   margin: 10px 0px 10px 250px;
   font-family: "Albert Sans", sans-serif ;
   font-size: 14px;
@@ -1250,7 +1250,7 @@ border-radius: 10px;
   font-weight: 400;
 }
 /* style the subject progress bar */
-#subject-over{
+.subject-over{
   margin: 10px 0px 0px 250px ;
   font-family:"Albert Sans", sans-serif ;
   color:#545557 ;
@@ -1258,7 +1258,7 @@ border-radius: 10px;
   font-size:14px;
   font-weight:700;
 }
-#subject-progress{
+.subject-progress{
   border: 0.001em solid #545557;
   width:500px;
   height:360px;
@@ -1317,7 +1317,7 @@ align-items: center;
   margin: 20px 0px 0px 250px;
 
 }
-#account-box{
+.account-box{
   border: 1px solid #545557;
   margin: 10px 0px 300px 250px ;
   height: 50px;
@@ -1340,10 +1340,13 @@ align-items: center;
   margin:0px 0px 0px 10px ;
   cursor: pointer;
 }
+/* make a new class for the dark mode */
 .dark-mode{
   background-color: black;
   color: white;
   border: 3px solid #1B2CC1;
-
-
+}
+.dark-mode2{
+  background-color: black;
+  color: white;
 }
