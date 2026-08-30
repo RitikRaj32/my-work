@@ -50,6 +50,7 @@ main {
   height: 350px;
 
 }
+
 /* styling nemu option  */
 
 .option {
@@ -79,7 +80,7 @@ main {
   background-color: #252542;
 }
 
-.selected{
+.selected {
   background: linear-gradient(to right, #818cf8, #a855f7);
 }
 
@@ -767,7 +768,7 @@ input:focus+.slider {
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
- 
+
 }
 
 .book-card {
@@ -778,13 +779,13 @@ input:focus+.slider {
   align-items: center;
   justify-content: center;
   background-color: white;
- border: 0.4px solid rgb(208, 204, 204);
+  border: 0.4px solid rgb(208, 204, 204);
   border-radius: 15px;
   gap: 12px;
   transform: translateY(0) scale(1);
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
     box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
@@ -898,6 +899,7 @@ input:focus+.slider {
 .science-book {
   height: 2200px;
 }
+
 .science-chap-smg {
   color: #bf0836;
   background-color: #d28a9c57;
@@ -1002,81 +1004,99 @@ input:focus+.slider {
 #english-box {
   height: 1650px;
 }
+
 /* style different on english-book */
-.english-chap-smg{
+.english-chap-smg {
   color: #057ff8;
-   ;
+  ;
 }
-.english-chap-smg:hover{
-  
-  background-color:#58abfe90 ;
+
+.english-chap-smg:hover {
+
+  background-color: #58abfe90;
 }
+
 /* style different on hindi book */
-.hindi-smg{
+.hindi-smg {
   color: #7f3300;
-  background-color:#e0b39593 ;
+  background-color: #e0b39593;
 
 }
-.hindi-smg:hover{
-  background-color:#e0946293 ;
+
+.hindi-smg:hover {
+  background-color: #e0946293;
 }
-.hindi-sub{
+
+.hindi-sub {
   font-size: 25px;
-  font-family:"Albert Sans", sans-serif ;
-  font-weight:600;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 600;
   align-self: flex-start;
-/* hindi grammar styling */
+  /* hindi grammar styling */
 }
-.hindigr{
+
+.hindigr {
   height: 1300px;
 }
-.hindigr-smg{
-  background-color:#add37f6b ;
+
+.hindigr-smg {
+  background-color: #add37f6b;
   color: #386205;
 }
-.hindigr-smg:hover{
-   background-color:#92db396b ;
+
+.hindigr-smg:hover {
+  background-color: #92db396b;
 }
+
 /* sanskrit book styling*/
-.sanskritbook-box{
+.sanskritbook-box {
   height: 500px;
 }
-.sanskrit-smg{
-  color:rgb(144, 93, 0);
-  background-color:rgba(225, 191, 127, 0.474);
+
+.sanskrit-smg {
+  color: rgb(144, 93, 0);
+  background-color: rgba(225, 191, 127, 0.474);
 }
-.sanskrit-smg:hover{
+
+.sanskrit-smg:hover {
   background-color: rgba(222, 168, 68, 0.474);
 }
+
 /*history and poltical section styling */
-.history-box{
+.history-box {
   height: 900px;
 }
-.history-smg{
-color: #78290f;
-background-color:rgba(173, 71, 71, 0.484) ;
+
+.history-smg {
+  color: #78290f;
+  background-color: rgba(173, 71, 71, 0.484);
 }
-.history-smg:hover{
-  background-color:rgba(200, 71, 71, 0.584) ;
+
+.history-smg:hover {
+  background-color: rgba(200, 71, 71, 0.584);
 }
+
 /*odia grammar box size manage */
-.odiagr-box{
-  height:800px;
+.odiagr-box {
+  height: 800px;
 }
+
 /* style english grammar section */
-.englishgr-box{
+.englishgr-box {
   height: 1100px;
 }
+
 /* style the odia book section */
-#odia-box{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-margin-left: 200px;
-width:850px
+#odia-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 200px;
+  width: 850px
 }
-#odiaerror{
+
+#odiaerror {
   font-family: "Albert Sans", sans-serif;
   font-size: 18px;
   text-align: center;
@@ -1088,43 +1108,46 @@ width:850px
 
 /*style the profile page */
 
-.box-top1{
+.box-top1 {
   width: 500px;
   height: 50px;
   display: flex;
   align-items: center;
   margin: 0px 0px 0px 250px;
-  
-    background-color: #f0f4ff;
+
+  background-color: #f0f4ff;
 }
+
 /* style the the top of the profile */
-.back-profile{
-  background-color:#f0f4ff ;
+.back-profile {
+  background-color: #f0f4ff;
   width: 70px;
   height: 35px;
- margin: 0px 130px 0px 0px;
+  margin: 0px 130px 0px 0px;
   font-size: 17px;
-  font-family:"Albert Sans", sans-serif ;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 500;
   border: none;
   cursor: pointer;
 }
-#back-profile:active{
- transform: scale(0.95); 
+
+#back-profile:active {
+  transform: scale(0.95);
 }
 
-#profile-title{
-  font-family:"Albert Sans", sans-serif ;
+#profile-title {
+  font-family: "Albert Sans", sans-serif;
   font-size: 21px;
   font-weight: 700;
-  margin: 0px 160px 0px 0px ;
-  
+  margin: 0px 160px 0px 0px;
+
   text-transform: capitalize;
 }
-.settings{
+
+.settings {
   width: 40px;
   height: 40px;
-  background-color:#f0f4ff ;
+  background-color: #f0f4ff;
   border: none;
   cursor: pointer;
   height: 25px;
@@ -1132,14 +1155,17 @@ width:850px
   border: 0.7px solid #6c6d6f;
   border-radius: 5px;
 }
-.settings:active{
-  transform:scale(0.95);
+
+.settings:active {
+  transform: scale(0.95);
 }
-#profile-icon{
+
+#profile-icon {
   size: fill;
-  
+
 }
-.profile-info{
+
+.profile-info {
   border: 1px solid #6c6d6f;
   width: 500px;
   height: 300px;
@@ -1151,35 +1177,40 @@ width:850px
   background-color: #f5f7ff;
   margin: 0px 0px 0px 250px;
 }
-#profile-dp{
+
+#profile-dp {
   width: 90px;
   height: 90px;
-  border:none;
+  border: none;
   border-radius: 50%;
   margin: 30px 0px 0px 0px;
   object-fit: cover;
 }
-#profile-dp img{
-   width: 100%;
+
+#profile-dp img {
+  width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: center;
 
 }
-.name-std{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-text-transform: capitalize;
-font-weight: 500;
-font-size: 22px;
-color: black;
+
+.name-std {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
 }
-.std-class{
+
+.std-class {
   font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #4b4c4d;
 }
-.std-school{
+
+.std-school {
   font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1187,166 +1218,233 @@ color: black;
   text-transform: capitalize;
 
 }
-#edit-profile{
+
+#edit-profile {
   margin: 10px 0px 0px 0px;
   height: 35px;
   width: 120px;
-  background-image: linear-gradient(to right,#818cf8, #a855f7);
+  background-image: linear-gradient(to right, #818cf8, #a855f7);
   border-radius: 5px;
   color: white;
-  font-family:"Albert Sans", sans-serif ;
+  font-family: "Albert Sans", sans-serif;
   font-size: 15px;
   border: none;
   cursor: pointer;
   text-transform: capitalize;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   gap: 5px;
 }
-#edit-profile:active{
+
+#edit-profile:active {
   transform: scale(0.95);
 }
+
 /* style the over-view */
-.overview{
+.overview {
   margin: 10px 0px 10px 250px;
-  font-family: "Albert Sans", sans-serif ;
+  font-family: "Albert Sans", sans-serif;
   font-size: 14px;
-  color:#545557;
+  color: #545557;
   font-weight: 700;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
-#overview-box{
+
+#overview-box {
   height: 90px;
   width: 500px;
-  margin:0px 0px 0px 250px;
+  margin: 0px 0px 0px 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 
 }
-.overview-box1{
-width:110px;
-height: 80px;
-border:1px solid #545557 ;
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-background-color:#f5f7ff ;
-border-radius: 10px;
+
+.overview-box1 {
+  width: 110px;
+  height: 80px;
+  border: 1px solid #545557;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f7ff;
+  border-radius: 10px;
 }
-.overview-style1{
+
+.overview-style1 {
   font-weight: 600;
-  font-family:"Albert Sans", sans-serif  ;
+  font-family: "Albert Sans", sans-serif;
   font-size: 18px;
   color: black;
 }
-.overview-style2{
+
+.overview-style2 {
   color: #545557;
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 400;
 }
+
 /* style the subject progress bar */
-.subject-over{
-  margin: 10px 0px 0px 250px ;
-  font-family:"Albert Sans", sans-serif ;
-  color:#545557 ;
+.subject-over {
+  margin: 10px 0px 0px 250px;
+  font-family: "Albert Sans", sans-serif;
+  color: #545557;
   text-transform: uppercase;
-  font-size:14px;
-  font-weight:700;
+  font-size: 14px;
+  font-weight: 700;
 }
-.subject-progress{
+
+.subject-progress {
   border: 0.001em solid #545557;
-  width:500px;
-  height:360px;
+  width: 500px;
+  height: 360px;
   margin: 10px 0px 0px 250px;
   border-radius: 10px;
-  background-color:#f5f7ff ;
+  background-color: #f5f7ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  justify-content: center; 
+  justify-content: center;
 }
-.subject-bar{
+
+.subject-bar {
   width: 500px;
-  height:20px;
-display: flex;
-align-items: center;
+  height: 20px;
+  display: flex;
+  align-items: center;
 
 }
-.sub-wise-name{
-  margin: 0px 0px 0px 20px ;
-  font-family:"Albert Sans", sans-serif;
+
+.sub-wise-name {
+  margin: 0px 0px 0px 20px;
+  font-family: "Albert Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  
+
 }
-.subject-progress-bar{
+
+.subject-progress-bar {
   width: 480px;
   height: 10px;
   border-radius: 5px;
   background-color: #d5def9;
 }
-.percentage{
+
+.percentage {
   display: flex;
   position: absolute;
-  right:530px;
-  font-family:"Albert Sans", sans-serif ;
+  right: 530px;
+  font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
 
 }
-#view-detail{
-  font-family:"Albert Sans", sans-serif ;
+
+#view-detail {
+  font-family: "Albert Sans", sans-serif;
   font-size: 18px;
-  font-weight:400;
+  font-weight: 400;
   color: #089949;
   cursor: pointer;
-  margin: 10px 0px 0px 0px ;
+  margin: 10px 0px 0px 0px;
 }
-#Account-para{
-  font-family:"Albert Sans", sans-serif;
+
+#Account-para {
+  font-family: "Albert Sans", sans-serif;
   font-size: 14px;
-  font-weight:700;
+  font-weight: 700;
   text-transform: uppercase;
-  color:#545557 ;
+  color: #545557;
   margin: 20px 0px 0px 250px;
 
 }
-.account-box{
+
+.account-box {
   border: 1px solid #545557;
-  margin: 10px 0px 300px 250px ;
+  margin: 10px 0px 300px 250px;
   height: 50px;
   width: 500px;
-  display:flex;
+  display: flex;
   align-items: center;
   border-radius: 10px;
 
 }
-#log-out{
+
+#log-out {
   color: red;
   margin: 0px 0px 0px 10px;
-  font-family:"Albert Sans", sans-serif ;
+  font-family: "Albert Sans", sans-serif;
   font-size: 16px;
-  font-weight:600 ;
+  font-weight: 600;
   cursor: pointer;
 }
-.logout-icon{
+
+.logout-icon {
   color: red;
-  margin:0px 0px 0px 10px ;
+  margin: 0px 0px 0px 10px;
   cursor: pointer;
+}
+/* style the test page */
+.test-title {
+  color: #000000;
+  margin: 50px 0px 0px 200px;
+  font-size: 30px;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.test-smg {
+  margin: 10px 0px 0px 200px;
+  font-size: 18px;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #dfdfdf;
+  background: linear-gradient(to right, #818cf8, #7b3ab8);
+  padding: 2px 8px 2px 8px;
+  border-radius: 8px;
+  display: inline;
+
+}
+.test-box{
+  border: none;
+  width:730px;
+  height: 200px;
+  margin: 30px 0px 0px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.test-box2{
+ border: 0.4px solid rgb(208, 204, 204);
+  height: 190px;
+  width: 220px;
+  border-radius: 10px;
+  background-color:white ;
+  transform: translateY(0) scale(1);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+.test-box2:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;
 }
 /* make a new class for the dark mode */
-.dark-mode{
+.dark-mode {
   background-color: black;
   color: white;
   border: 3px solid #1B2CC1;
 }
-.dark-mode2{
+
+.dark-mode2 {
   background-color: black;
   color: white;
 }
