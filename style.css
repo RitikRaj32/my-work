@@ -1430,12 +1430,59 @@ input:focus+.slider {
   background-color:white ;
   transform: translateY(0) scale(1);
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
-    box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+   box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 .test-box2:hover {
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 20px 25px -5px #818cf8, 0 10px 10px -5px #7b3ab8;
+}
+
+.test-time{
+  color: #000000;
+  font-size:20px;
+  text-transform: capitalize;
+  font-family:"Albert Sans", sans-serif ;
+  font-weight: 600;
+  margin: 0px 0px 15px 0px;
+}
+.test-number-question{
+  color: #08bf67;
+  font-family:"Albert Sans", sans-serif ;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color:#82f6be6b ;
+  padding: 4px 5px 4px 5px;
+  border: none;
+  border-radius: 6px;
+}
+.start-testbtn{
+  margin: 15px 0px 0px 0px ;
+  height: 30px;
+  width: 80px;
+  border: 3px solid #303ebe;
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+  font-family:"Albert Sans", sans-serif ;
+  font-weight: 600;
+  background-color: #4955c6d0;
+  cursor: pointer;
+}
+.start-testbtn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.start-testbtn:active {
+    transform: scale(0.92);
 }
 /* make a new class for the dark mode */
 .dark-mode {
